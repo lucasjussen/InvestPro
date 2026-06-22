@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulação Concluída — InvestPro</title>
+  <link rel="stylesheet" href="Styles/main.css">
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Menu principal">
+    <a href="index.html" class="navbar__logo">Invest<span>Pro</span></a>
+
+    <ul class="navbar__links" role="list">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="index.html#ativos">Ativos</a></li>
+      <li><a href="about.html">Sobre</a></li>
+      <li><a href="form.html" class="navbar__cta">Começar</a></li>
+    </ul>
+
+    <button class="navbar__hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="result-container">
+
+    <div id="alertBox" class="alert-box"></div>
+
+    <section id="resultSection">
+
+      <div class="result-header">
+        <p class="result-eyebrow">Simulador de Inteligência Financeira</p>
+        <h1>Simulação <span>Concluída</span></h1>
+      </div>
+
+      <div class="result-grid">
+
+        <div class="card">
+          <h2>
+            <span>👤 Perfil do Investidor</span>
+            <span id="res-perfil-badge" class="badge">Avaliando...</span>
+          </h2>
+
+          <div class="info-group">
+            <div class="info-item">
+              <label>Nome Completo</label>
+              <span id="res-nome">—</span>
+            </div>
+
+            <div class="info-item info-item--split">
+              <div>
+                <label>CPF</label>
+                <span id="res-cpf">—</span>
+              </div>
+              <div>
+                <label>Telefone</label>
+                <span id="res-telefone">—</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <label>E-mail Cadastrado</label>
+              <span id="res-email">—</span>
+            </div>
+
+            <div class="info-item info-item--split">
+              <div>
+                <label>Aporte Inicial</label>
+                <span id="res-valor" class="value-strong">—</span>
+              </div>
+              <div>
+                <label>Prazo Escolhido</label>
+                <span id="res-prazo">—</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card--projection">
+          <h2>📈 Análise e Projeção Estimada</h2>
+
+          <div class="info-group">
+            <div class="info-item">
+              <label>Estratégia Selecionada</label>
+              <span id="res-tipo" class="value-strong">—</span>
+            </div>
+
+            <div class="info-item">
+              <label>Taxa de Rendimento Esperada</label>
+              <span id="res-taxa" class="value-gold">—</span>
+            </div>
+
+            <div class="info-item info-item--divider">
+              <label>Montante Final Estimado</label>
+              <span id="res-retorno" class="projection-value">—</span>
+            </div>
+
+            <div class="info-item">
+              <label>Evolução Patrimonial (Lucro Líquido)</label>
+              <span id="res-lucro" class="projection-profit">—</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="result-actions">
+        <button id="btnVoltar" class="btn--ghost">← Ajustar Dados</button>
+        <button id="btnNovo" class="btn btn--primary">Nova Simulação 🚀</button>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script/main.js"></script>
+  <script src="script/formAction.js"></script>
+</body>
+</html>
